@@ -28,7 +28,7 @@ gbot.close()
 
 ```
 &$MODM  |  manual mode
-&$MODA  |  automatic mode
+&$MODA  |  automatic mode (use ultrasonic)
 ```
 
 **Engine controls**
