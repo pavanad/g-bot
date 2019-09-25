@@ -35,6 +35,7 @@ gbot.close()
 
 ```
 &$DIRF  |  front
+&$DIRFS |  front with 250ms and stop
 &$DIRB  |  back
 &$DIRS  |  stop
 &$DIRL  |  left

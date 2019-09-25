@@ -260,6 +260,15 @@ void interrupt serialHandler() {
                 if (mode == MOD_M) setDirection(FRONT);
             }
             
+            if (buffer[0] == '$' && buffer[1] == 'D' && buffer[2] == 'I' && buffer[3] == 'R' && buffer[4] == 'F' && buffer[5] == 'S') {
+                if (mode == MOD_M) {
+                    setDirection(FRONT);
+                    __delay_ms(250);
+                    setDirection(STOP);
+                }
+                
+            }
+            
             if (buffer[0] == '$' && buffer[1] == 'D' && buffer[2] == 'I' && buffer[3] == 'R' && buffer[4] == 'L') {
                 if (mode == MOD_M) {
                     setDirection(LEFT);
